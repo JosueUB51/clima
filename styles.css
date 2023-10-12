@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #a3d5d3;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+button {
+    margin: 20px 0;
+}
+
+span {
+    font-weight: bold;
+}
+/* Estilos para las tarjetas de resultados */
+.result-card {
+    width: 45%; /* Cambiar el ancho para que quepan dos en la misma fila */
+    margin: 10px; /* Espacio entre las cartas */
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    text-align: center;
+    display: inline-block; /* Hacer que se muestren en línea */
+}
+
+/* Estilos para las tarjetas de resultados */
+.result-card:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+
+/* Estilos para las tarjetas de resultados específicas */
+#promedio-maximo-card,
+#promedio-minimo-card {
+    width: 20%; /* Ancho para las cartas de promedio */
+    background-color: #52d370; /* Color de fondo personalizado para el promedio máximo */
+}
+#promedio-minimo-card{
+    background-color: #dcda42; /* Color de fondo  */
+}
+
+#dia-mas-frio-card,
+#dia-mas-caluroso-card{
+    width: 20%; /* Ancho para las cartas de promedio */
+    background-color: #165cea; /* Color de fondo */
+}
+#dia-mas-caluroso-card{
+    background-color: #e5530b; /* Color de fondo  */
+}
+
+/* Estilos para el contenedor de resultados */
+.result-container {
+    text-align: center;
+}
+
+/* Estilos para los contenedores de tarjetas de resultados */
+.result-container > .result-card {
+    margin: 5px; /* Espacio entre las cartas de resultados */
+}
+/* Estilos para el contenedor del botón grafica */
+.button-container {
+    text-align: center;
+}
+
+/* Estilos para la gráfica */
+/* Estilos para la gráfica */
+#grafica {
+    width: 70px; /* Ancho de la gráfica más pequeño */
+    height: 50px; /* Altura de la gráfica más pequeña */
+    margin: 0 auto; /* Centra la gráfica horizontalmente */
+    display: block; /* Asegura que la gráfica no se superponga con otros elementos */
+}
+
+.button-container button {
+    font-size: 18px; /* Tamaño de fuente más grande para los botones */
+     padding: 10px 20px; /* Aumenta el espacio interno del botón */
+     background-color: #dcda42;
+}
+
+#promedio{
+    font-size: 18px; /* Tamaño de fuente más grande para los botones */
+    padding: 10px 20px; /* Aumenta el espacio interno del botón */
+    background-color: #dcda42;
+}
+
+
+
+
+
+

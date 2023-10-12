@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pronóstico del Tiempo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <h1>Bienvenidos al Clima con Josue Urbiña Brena</h1>
+    <h2>Pronóstico del Tiempo</h2>
+    <h4>Por favor ingrese las temperaturas por cada dia de la semana</h4>
+    <table>
+        <tr>
+            <th>Día</th>
+            <th>Mañana</th>
+            <th>Tarde</th>
+            <th>Noche</th>
+        </tr>
+        <tr>
+            <td>Lunes</td>
+            <td><input type="number" id="lunes-morning"></td>
+            <td><input type="number" id="lunes-afternoon"></td>
+            <td><input type="number" id="lunes-night"></td>
+        </tr>
+        <tr>
+            <td>Martes</td>
+            <td><input type="number" id="martes-morning"></td>
+            <td><input type="number" id="martes-afternoon"></td>
+            <td><input type="number" id="martes-night"></td>
+        </tr>
+        <tr>
+            <td>Miercoles</td>
+            <td><input type="number" id="miercoles-morning"></td>
+            <td><input type="number" id="miercoles-afternoon"></td>
+            <td><input type="number" id="miercoles-night"></td>
+        </tr>
+        <tr>
+            <td>Jueves</td>
+            <td><input type="number" id="jueves-morning"></td>
+            <td><input type="number" id="jueves-afternoon"></td>
+            <td><input type="number" id="jueves-night"></td>
+        </tr>
+        <tr>
+            <td>Viernes</td>
+            <td><input type="number" id="viernes-morning"></td>
+            <td><input type="number" id="viernes-afternoon"></td>
+            <td><input type="number" id="viernes-night"></td>
+        </tr>
+        <tr>
+            <td>Sabado</td>
+            <td><input type="number" id="sabado-morning"></td>
+            <td><input type="number" id="sabado-afternoon"></td>
+            <td><input type="number" id="sabado-night"></td>
+        </tr>
+        <tr>
+            <td>Domingo</td>
+            <td><input type="number" id="domingo-morning"></td>
+            <td><input type="number" id="domingo-afternoon"></td>
+            <td><input type="number" id="domingo-night"></td>
+        </tr>
+        <!-- Repite esto para cada día de la semana -->
+    </table>
+    <button id="promedio" onclick="calcularPromedio()">Calcular Promedio</button>
+    <br>
+    <!-- Sección de Promedio Máximo -->
+<div class="result-card" id="promedio-maximo-card">
+    <p>Promedio Máximo: <span id="promedio-maximo"></span>°C</p>
+</div>
+
+<!-- Sección de Promedio Mínimo -->
+<div class="result-card" id="promedio-minimo-card">
+    <p>Promedio Mínimo: <span id="promedio-minimo"></span>°C</p>
+</div>
+<br>
+<!-- Sección de Día Más Frío -->
+<div class="result-card" id="dia-mas-frio-card">
+    <p>Día Más Frío: <span id="dia-mas-frio"></span></p>
+</div>
+
+<!-- Sección de Día Más Caluroso -->
+<div class="result-card" id="dia-mas-caluroso-card">
+    <p>Día Más Caluroso: <span id="dia-mas-caluroso"></span></p>
+</div>
+<br>
+<!-- Contenedor para el botón y la gráfica -->
+<div class="button-container">
+    <button onclick="crearGrafica()">Crear Gráfica</button>
+</div>
+    <canvas id="grafica" width="70" height="50"></canvas>
+    <br>
+
+    <script src="script.js"></script>
+</body>
+</html>
